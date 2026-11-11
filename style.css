@@ -1,0 +1,20 @@
+body { color: #233b36; background: #f2f6f3; font: 16px/1.55 Arial, sans-serif; }
+.site-header, .site-footer { background: #173b34; color: #fff; }
+.header-inner, .page-content, .site-footer .container { max-width: 960px; }
+.site-nav .container { max-width: 960px; }
+.brand { color: inherit; text-decoration: none; }
+.brand:hover { color: #fff; text-decoration: none; }
+.brand-mark { width: 52px; height: 52px; display: inline-grid; place-items: center; border-radius: 50%; background: #d6a85f; color: #173b34; font-size: 25px; font-weight: 800; }
+.brand strong { font-size: 22px; }
+.brand small, .header-note { color: #d0dfd8; }
+.site-nav { background: #24564b; }
+.site-nav .nav-link { color: #fff; }
+.site-nav .nav-link:hover, .site-nav .nav-link:focus { background: #317261; color: #fff; }
+.surface { height: 100%; border: 1px solid #d9e5de; border-radius: 12px; background: #fff; box-shadow: 0 4px 16px #173b3410; }
+.surface h2 { margin-top: 0; font-size: 1.5rem; }
+.link-list { padding-left: 22px; overflow-wrap: anywhere; }
+.link-list li { margin: 8px 0; }
+.link-image { width: 120px; height: 90px; object-fit: cover; border-radius: 8px; }
+.map-image { display: block; width: min(100%, 280px); height: auto; border-radius: 8px; }
+.table caption { caption-side: top; color: #233b36; font-weight: 700; }
+.site-footer { color: #d0dfd8; }
