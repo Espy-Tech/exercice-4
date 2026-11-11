@@ -95,9 +95,9 @@
     <section class="surface p-3 p-lg-4 my-3" id="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Форма участника</h2>
       <form action="/" method="post" class="row">
-        <div class="form-group col-12 col-md-6"><label for="fullname">ФИО</label><input class="form-control" id="fullname" name="fullname" type="text" autocomplete="name" pattern="[\p{L}\p{M}][\p{L}\p{M}\s'\u2019\-]*" title="Используйте буквы, пробелы, дефис и апостроф." required></div>
-        <div class="form-group col-12 col-md-6"><label for="phone">Телефон</label><input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="form-group col-12 col-md-6"><label for="email">E-mail</label><input class="form-control" id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="form-group col-12 col-md-6"><label for="fullname">ФИО</label><input class="form-control" id="fullname" name="fullname" type="text" autocomplete="name" maxlength="100" pattern="[\p{L}\p{M}][\p{L}\p{M}\s'\u2019\-]*" title="Используйте буквы, пробелы, дефис и апостроф." required></div>
+        <div class="form-group col-12 col-md-6"><label for="phone">Телефон</label><input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" pattern="\+?[0-9][0-9().\s-]{0,19}" placeholder="+7 900 000-00-00" title="Используйте от 7 до 15 цифр; допустимы +, пробелы, скобки, дефисы и точки."></div>
+        <div class="form-group col-12 col-md-6"><label for="email">E-mail</label><input class="form-control" id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
         <div class="form-group col-12 col-md-6"><label for="birthdate">Дата рождения</label><input class="form-control" id="birthdate" name="birthdate" type="date"></div>
         <fieldset class="form-group col-12"><legend class="col-form-label pt-0">Пол</legend>
           <div class="form-check form-check-inline"><input class="form-check-input" id="gender-female" type="radio" name="gender" value="female"><label class="form-check-label" for="gender-female">Женский</label></div>
@@ -107,7 +107,7 @@
         <div class="form-group col-12"><label for="languages">Любимые языки программирования (можно выбрать несколько)</label>
           <select class="form-control" id="languages" name="languages[]" multiple size="6"><option>Pascal</option><option>C</option><option>C++</option><option>JavaScript</option><option>PHP</option><option>Python</option><option>Java</option><option>Haskell</option><option>Clojure</option><option>Prolog</option><option>Scala</option></select>
         </div>
-        <div class="form-group col-12"><label for="biography">Биография</label><textarea class="form-control" id="biography" name="biography" rows="4"></textarea></div>
+        <div class="form-group col-12"><label for="biography">Биография</label><textarea class="form-control" id="biography" name="biography" rows="4" maxlength="2000"></textarea></div>
         <div class="form-group form-check col-12"><input class="form-check-input" id="contract" type="checkbox" name="contract" value="accepted" required><label class="form-check-label" for="contract">С контрактом ознакомлен(а)</label></div>
         <div class="col-12"><button class="btn btn-primary" type="submit">Сохранить</button></div>
       </form>
